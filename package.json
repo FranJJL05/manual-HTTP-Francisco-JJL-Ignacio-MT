@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/FranJJL05/manual-HTTP-Francisco-JJL-Ignacio-MT#readme",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "json-server": "^1.0.0-beta.3"
   }
 }
