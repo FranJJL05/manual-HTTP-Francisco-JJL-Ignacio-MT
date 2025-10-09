@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Proyecto CRUD HTTP Manual con cURL y Herramientas Visuales",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:up": "json-server --watch db.json --port 4000",
+    "crud:curl": "node src/crud-curl.js",
+    "validate": "bash" 
   },
   "repository": {
     "type": "git",
