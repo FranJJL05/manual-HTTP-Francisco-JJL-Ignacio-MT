@@ -211,8 +211,8 @@ ${endpoint}`;
 // EJEMPLO DE USO
 // -----------------------------------------------------------------------
 /*patchStudent(3, {
-   active: false,
-   level: "advanced"
+    active: false,
+    level: "advanced"
 }); */
 
 //---------------------------------------------------------------------
@@ -263,9 +263,27 @@ const newStudent = {
     level: "intermediate"
 };
 
+<<<<<<< HEAD
 // Datos para la actualización completa (PUT)
 const fullUpdateData = {
     id: TEST_ID,
+=======
+createStudent(newStudent);
+
+//---------------------------------------
+
+readAllStudents();
+
+//---------------------------------------
+
+// Asumiendo que el ID 3 existe en tu db.json
+readStudentById(3);
+
+//---------------------------------------
+
+updateStudent(3, {
+    id: 3,
+>>>>>>> 6eb52f60951599bc4e5dd4a9d2ee5b38e7f309be
     name: "Francisco José",
     email: "fran.jose@email.com",
     enrollmentDate: "2024-07-10",
@@ -279,6 +297,13 @@ const partialUpdateData = {
     level: "advanced"
 };
 
+<<<<<<< HEAD
+=======
+patchStudent(3, {
+    active: false,
+    level: "advanced"
+});
+>>>>>>> 6eb52f60951599bc4e5dd4a9d2ee5b38e7f309be
 
 // --- INICIO DE EJECUCIÓN ---
 
