@@ -41,7 +41,7 @@ Desarrollo del código JavaScript para generar los comandos cURL y el script de 
 - [X] Implementar la función `patchStudent(id, partialData)` (imprime comando PATCH).
 - [X] Implementar la función `deleteStudent(id)` (imprime comando DELETE).
 - [X] Asegurar que todas las funciones incluyan comentarios JSDoc y parámetros apropiados.
-- [ ] Ejecutar todas las funciones al final del script, pasando los parámetros apropiados.
+- [X] Ejecutar todas las funciones al final del script, pasando los parámetros apropiados.
 
 ### 4. Script de Validación (`scripts/validate.sh`)
 - [ ] Crear el script `scripts/validate.sh`.
