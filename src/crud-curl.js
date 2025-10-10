@@ -244,45 +244,69 @@ ${endpoint}`;
 //deleteStudent(3);
 
 //------------------------------------------------------------------------
-// Llamada a las funciones
+//------------------------------------------------------------------------
+// 2.3 EJECUCIÓN DEL SCRIPT Y GENERACIÓN DE COMANDOS cURL
+//------------------------------------------------------------------------
 
+// --- DATOS DE PRUEBA ---
+// Usaremos el ID 3 para las operaciones que lo requieran, asumiendo que ya existe en db.json.
+const TEST_ID = 3;
+
+// Datos para el nuevo estudiante (CREATE)
 const newStudent = {
-    firstName: "Laura",
-    lastName: "Gómez",
-    level: "Avanzado",
+    // Se mantiene el ID 8 y los datos del ejemplo proporcionado:
+    id: 8,
+    name: "Juan José",
+    email: "juan.jose@email.com",
+    enrollmentDate: "2023-07-10",
     active: true,
-    email: "laura.gomez@example.com"
+    level: "intermediate"
 };
 
-createStudent(newStudent);
-
-//---------------------------------------
-
-readAllStudents();
-
-//---------------------------------------
-
-// Asumiendo que el ID 3 existe en tu db.json
-readStudentById(3); 
-
-//---------------------------------------
-
-updateStudent(3, {
-    id: 3,
+// Datos para la actualización completa (PUT)
+const fullUpdateData = {
+    id: TEST_ID,
     name: "Francisco José",
     email: "fran.jose@email.com",
     enrollmentDate: "2024-07-10",
     active: true,
     level: "beginner"
-});
+};
 
-//---------------------------------------
+// Datos para la modificación parcial (PATCH)
+const partialUpdateData = {
+    active: false,
+    level: "advanced"
+};
 
-patchStudent(3, {
-   active: false,
-   level: "advanced"
-});
 
-//---------------------------------------
+// --- INICIO DE EJECUCIÓN ---
 
-deleteStudent(3);
+console.log('\n================================================================');
+console.log('       INICIO DEL SCRIPT CRUD H T T P (COMANDOS C U R L)');
+console.log(`  -> BASE URL: ${BASE_URL}`);
+console.log('  -> ID de Prueba para UPD/DEL/GET: ${TEST_ID}');
+console.log('================================================================\n');
+
+// 1. C R E A T E (POST)
+createStudent(newStudent);
+
+// 2. R E A D - ALL (GET)
+readAllStudents();
+
+// 3. R E A D - BY ID (GET)
+readStudentById(TEST_ID);
+
+// 4. U P D A T E - FULL (PUT)
+updateStudent(TEST_ID, fullUpdateData);
+
+// 5. U P D A T E - PARTIAL (PATCH)
+patchStudent(TEST_ID, partialUpdateData);
+
+// 6. D E L E T E (DELETE)
+deleteStudent(TEST_ID);
+
+
+console.log('\n================================================================');
+console.log('FIN DEL SCRIPT: Comandos cURL generados con éxito.');
+console.log('================================================================\n');
