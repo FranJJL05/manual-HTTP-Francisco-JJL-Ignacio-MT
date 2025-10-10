@@ -131,3 +131,114 @@ function readStudentById(id) {
 // Asumiendo que el ID 3 existe en tu db.json
 readStudentById(3); 
 */
+
+//---------------------------------------------------------------------
+
+// Funcion updateStudent()
+
+/**
+ * Genera e imprime el comando cURL para actualizar completamente un estudiante (PUT).
+ * * Esta función toma un objeto con todos los datos del estudiante y construye
+ * un comando cURL que realiza una petición PUT al endpoint /students/{id}.
+ * * Todos los campos del estudiante serán reemplazados por los del objeto studentData.
+ * @param {string|number} id - ID del estudiante a actualizar.
+ * @param {object} studentData - Objeto con los datos completos del estudiante.
+ * Ejemplo: { id: 3, name: "Francisco José", email: "fran.jose@email.com", 
+ * enrollmentDate: "2024-07-10", active: true, level: "beginner" }
+ * @returns {void}
+ */
+function updateStudent(id, studentData) {
+    const endpoint = `${BASE_URL}/students/${id}`;
+    const dataJson = JSON.stringify(studentData, null, 2);
+
+    const curlCommand = `curl -i -X PUT \\ 
+-H 'Content-Type: application/json' \\ 
+-d '${dataJson}' \\ 
+${endpoint}`;
+
+    console.log('----------------------------------------------------');
+    console.log(`UPDATE COMMAND: Actualizar completamente estudiante ID=${id}`);
+    console.log('----------------------------------------------------');
+    console.log(curlCommand);
+    console.log('----------------------------------------------------');
+}
+
+// -----------------------------------------------------------------------
+// EJEMPLO DE USO
+// -----------------------------------------------------------------------
+updateStudent(3, {
+    id: 3,
+    name: "Francisco José",
+    email: "fran.jose@email.com",
+    enrollmentDate: "2024-07-10",
+    active: true,
+    level: "beginner"
+});
+
+
+//---------------------------------------------------------------------
+
+
+// Funcion patchStudent()
+
+/**
+ * Genera e imprime el comando cURL para modificar parcialmente un estudiante (PATCH).
+ * * Esta función toma los campos que se desean actualizar de un estudiante y construye
+ * un comando cURL que realiza una petición PATCH al endpoint /students/{id}.
+ * * Solo se modificarán los campos incluidos en el objeto partialData.
+ * @param {string|number} id - ID del estudiante que se desea modificar.
+ * @param {object} partialData - Objeto con los campos a actualizar.
+ * Ejemplo: { active: false, level: "advanced" }
+ * @returns {void}
+ */
+function patchStudent(id, partialData) {
+    const endpoint = `${BASE_URL}/students/${id}`;
+    const dataJson = JSON.stringify(partialData, null, 2);
+
+    const curlCommand = `curl -i -X PATCH \\ 
+-H 'Content-Type: application/json' \\ 
+-d '${dataJson}' \\ 
+${endpoint}`;
+
+    console.log('----------------------------------------------------');
+    console.log(`PATCH COMMAND: Modificar campos del estudiante ID=${id}`);
+    console.log('----------------------------------------------------');
+    console.log(curlCommand);
+    console.log('----------------------------------------------------');
+}
+
+// -----------------------------------------------------------------------
+// EJEMPLO DE USO
+// -----------------------------------------------------------------------
+patchStudent(3, {
+    active: false,
+    level: "advanced"
+});
+
+//---------------------------------------------------------------------
+
+// Funcion deleteStudent()
+
+/**
+ * Genera e imprime el comando cURL para eliminar un estudiante (DELETE).
+ * * Esta función construye un comando cURL que realiza una petición DELETE
+ * al endpoint /students/{id}, eliminando al estudiante indicado.
+ * @param {string|number} id - ID del estudiante a eliminar.
+ * @returns {void}
+ */
+function deleteStudent(id) {
+    const endpoint = `${BASE_URL}/students/${id}`;
+    const curlCommand = `curl -i -X DELETE \\ 
+${endpoint}`;
+
+    console.log('----------------------------------------------------');
+    console.log(`DELETE COMMAND: Eliminar estudiante ID=${id}`);
+    console.log('----------------------------------------------------');
+    console.log(curlCommand);
+    console.log('----------------------------------------------------');
+}
+
+// -----------------------------------------------------------------------
+// EJEMPLO DE USO
+// -----------------------------------------------------------------------
+deleteStudent(3);
