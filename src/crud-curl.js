@@ -244,8 +244,9 @@ ${endpoint}`;
 //deleteStudent(3);
 
 //------------------------------------------------------------------------
+
 //------------------------------------------------------------------------
-// 2.3 EJECUCIÓN DEL SCRIPT Y GENERACIÓN DE COMANDOS cURL
+// 2.3 ▶️ EJECUCIÓN DEL SCRIPT Y GENERACIÓN DE COMANDOS cURL
 //------------------------------------------------------------------------
 
 // --- DATOS DE PRUEBA ---
@@ -263,27 +264,9 @@ const newStudent = {
     level: "intermediate"
 };
 
-<<<<<<< HEAD
 // Datos para la actualización completa (PUT)
 const fullUpdateData = {
-    id: TEST_ID,
-=======
-createStudent(newStudent);
-
-//---------------------------------------
-
-readAllStudents();
-
-//---------------------------------------
-
-// Asumiendo que el ID 3 existe en tu db.json
-readStudentById(3);
-
-//---------------------------------------
-
-updateStudent(3, {
-    id: 3,
->>>>>>> 6eb52f60951599bc4e5dd4a9d2ee5b38e7f309be
+    id: TEST_ID, 
     name: "Francisco José",
     email: "fran.jose@email.com",
     enrollmentDate: "2024-07-10",
@@ -297,13 +280,6 @@ const partialUpdateData = {
     level: "advanced"
 };
 
-<<<<<<< HEAD
-=======
-patchStudent(3, {
-    active: false,
-    level: "advanced"
-});
->>>>>>> 6eb52f60951599bc4e5dd4a9d2ee5b38e7f309be
 
 // --- INICIO DE EJECUCIÓN ---
 
@@ -320,7 +296,7 @@ createStudent(newStudent);
 readAllStudents();
 
 // 3. R E A D - BY ID (GET)
-readStudentById(TEST_ID);
+readStudentById(TEST_ID); 
 
 // 4. U P D A T E - FULL (PUT)
 updateStudent(TEST_ID, fullUpdateData);
@@ -333,5 +309,7 @@ deleteStudent(TEST_ID);
 
 
 console.log('\n================================================================');
-console.log('FIN DEL SCRIPT: Comandos cURL generados con éxito.');
+console.log('FIN DEL SCRIPT: Comandos cURL generados con éxito. ✅');
+console.log('  -> Próximo paso: Copiar y ejecutar estos comandos manualmente');
+console.log('     en la terminal con json-server activo (npm run server:up).');
 console.log('================================================================\n');
