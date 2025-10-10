@@ -34,9 +34,9 @@ Desarrollo del código JavaScript para generar los comandos cURL y el script de 
 ### 3. Script CRUD (`src/crud-curl.js`)
 - [X] Crear `src/crud-curl.js` e importar y configurar `dotenv`.
 - [X] Construir la `BASE_URL` completa.
-- [ ] Implementar la función `createStudent(studentData)` (imprime comando POST).
-- [ ] Implementar la función `readAllStudents()` (imprime comando GET All).
-- [ ] Implementar la función `readStudentById(id)` (imprime comando GET by ID).
+- [X] Implementar la función `createStudent(studentData)` (imprime comando POST).
+- [X] Implementar la función `readAllStudents()` (imprime comando GET All).
+- [X] Implementar la función `readStudentById(id)` (imprime comando GET by ID).
 - [ ] Implementar la función `updateStudent(id, studentData)` (imprime comando PUT).
 - [ ] Implementar la función `patchStudent(id, partialData)` (imprime comando PATCH).
 - [ ] Implementar la función `deleteStudent(id)` (imprime comando DELETE).
