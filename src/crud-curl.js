@@ -211,8 +211,8 @@ ${endpoint}`;
 // EJEMPLO DE USO
 // -----------------------------------------------------------------------
 /*patchStudent(3, {
-   active: false,
-   level: "advanced"
+    active: false,
+    level: "advanced"
 }); */
 
 //---------------------------------------------------------------------
@@ -263,7 +263,7 @@ readAllStudents();
 //---------------------------------------
 
 // Asumiendo que el ID 3 existe en tu db.json
-readStudentById(3); 
+readStudentById(3);
 
 //---------------------------------------
 
@@ -279,8 +279,8 @@ updateStudent(3, {
 //---------------------------------------
 
 patchStudent(3, {
-   active: false,
-   level: "advanced"
+    active: false,
+    level: "advanced"
 });
 
 //---------------------------------------
