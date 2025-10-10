@@ -38,7 +38,7 @@ function createStudent(studentData) {
     ${endpoint}`;
 
     console.log('----------------------------------------------------');
-    console.log('➡️ COMANDO C R E A T E (POST): Crear Nuevo Estudiante');
+    console.log('COMANDO C R E A T E (POST): Crear Nuevo Estudiante');
     console.log('----------------------------------------------------');
     console.log(curlCommand);
     console.log('----------------------------------------------------');
@@ -83,7 +83,7 @@ function readAllStudents() {
     ${endpoint}`;
 
     console.log('----------------------------------------------------');
-    console.log('➡️ COMANDO R E A D (GET): Leer Todos los Estudiantes');
+    console.log('COMANDO R E A D (GET): Leer Todos los Estudiantes');
     console.log('----------------------------------------------------');
     console.log(curlCommand);
     console.log('----------------------------------------------------');
@@ -117,7 +117,7 @@ function readStudentById(id) {
     ${endpoint}`;
 
     console.log('----------------------------------------------------');
-    console.log(`➡️ COMANDO R E A D (GET): Leer Estudiante con ID ${id}`);
+    console.log(`COMANDO R E A D (GET): Leer Estudiante con ID ${id}`);
     console.log('----------------------------------------------------');
     console.log(curlCommand);
     console.log('----------------------------------------------------');
@@ -166,14 +166,14 @@ ${endpoint}`;
 // -----------------------------------------------------------------------
 // EJEMPLO DE USO
 // -----------------------------------------------------------------------
-updateStudent(3, {
+/*updateStudent(3, {
     id: 3,
     name: "Francisco José",
     email: "fran.jose@email.com",
     enrollmentDate: "2024-07-10",
     active: true,
     level: "beginner"
-});
+});*/
 
 
 //---------------------------------------------------------------------
@@ -210,10 +210,10 @@ ${endpoint}`;
 // -----------------------------------------------------------------------
 // EJEMPLO DE USO
 // -----------------------------------------------------------------------
-patchStudent(3, {
-    active: false,
-    level: "advanced"
-});
+/*patchStudent(3, {
+   active: false,
+   level: "advanced"
+}); */
 
 //---------------------------------------------------------------------
 
@@ -241,4 +241,48 @@ ${endpoint}`;
 // -----------------------------------------------------------------------
 // EJEMPLO DE USO
 // -----------------------------------------------------------------------
+//deleteStudent(3);
+
+//------------------------------------------------------------------------
+// Llamada a las funciones
+
+const newStudent = {
+    firstName: "Laura",
+    lastName: "Gómez",
+    level: "Avanzado",
+    active: true,
+    email: "laura.gomez@example.com"
+};
+
+createStudent(newStudent);
+
+//---------------------------------------
+
+readAllStudents();
+
+//---------------------------------------
+
+// Asumiendo que el ID 3 existe en tu db.json
+readStudentById(3); 
+
+//---------------------------------------
+
+updateStudent(3, {
+    id: 3,
+    name: "Francisco José",
+    email: "fran.jose@email.com",
+    enrollmentDate: "2024-07-10",
+    active: true,
+    level: "beginner"
+});
+
+//---------------------------------------
+
+patchStudent(3, {
+   active: false,
+   level: "advanced"
+});
+
+//---------------------------------------
+
 deleteStudent(3);
