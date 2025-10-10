@@ -37,10 +37,10 @@ Desarrollo del código JavaScript para generar los comandos cURL y el script de 
 - [X] Implementar la función `createStudent(studentData)` (imprime comando POST).
 - [X] Implementar la función `readAllStudents()` (imprime comando GET All).
 - [X] Implementar la función `readStudentById(id)` (imprime comando GET by ID).
-- [ ] Implementar la función `updateStudent(id, studentData)` (imprime comando PUT).
-- [ ] Implementar la función `patchStudent(id, partialData)` (imprime comando PATCH).
-- [ ] Implementar la función `deleteStudent(id)` (imprime comando DELETE).
-- [ ] Asegurar que todas las funciones incluyan comentarios JSDoc y parámetros apropiados.
+- [X] Implementar la función `updateStudent(id, studentData)` (imprime comando PUT).
+- [X] Implementar la función `patchStudent(id, partialData)` (imprime comando PATCH).
+- [X] Implementar la función `deleteStudent(id)` (imprime comando DELETE).
+- [X] Asegurar que todas las funciones incluyan comentarios JSDoc y parámetros apropiados.
 - [ ] Ejecutar todas las funciones al final del script, pasando los parámetros apropiados.
 
 ### 4. Script de Validación (`scripts/validate.sh`)
