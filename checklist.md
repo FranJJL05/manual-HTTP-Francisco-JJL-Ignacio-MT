@@ -57,7 +57,7 @@ Desarrollo del código JavaScript para generar los comandos cURL y el script de 
 
 Ejecución manual de comandos, uso de herramientas visuales y documentación completa en `README.md`.
 
-### 5. Documentación cURL (Parte 3)
+### 5. Documentación cURL y Checklist (Parte 3)
 - [X] Levantar el servidor `json-server`.
 - [X] Ejecutar los comandos cURL generados y capturar las respuestas reales.
 - [X] Documentar el **CREATE** en `README.md` (Comando, explicación de flags/headers, método, respuesta real y código de estado).
@@ -66,6 +66,7 @@ Ejecución manual de comandos, uso de herramientas visuales y documentación com
 - [X] Documentar el **UPDATE (PUT)** en `README.md`.
 - [X] Documentar el **PATCH** en `README.md`.
 - [X] Documentar el **DELETE** en `README.md`.
+- [X] Crear un checklist con todas la estructura del proyecto, e ir actualizandolo a medida que se vayan realizando las tareas.
 
 ### 6. Thunder Client (Parte 4)
 - [X] Crear las 6 peticiones CRUD en Thunder Client.
