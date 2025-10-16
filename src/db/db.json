@@ -59,8 +59,8 @@
     {
       "id": "9",
       "nombre": "Antonio Ramón",
-      "nivel": "intermedio",
-      "activo": true
+      "level": "intermediate",
+      "active": true
     }
   ],
   "courses": [

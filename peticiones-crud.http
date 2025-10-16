@@ -11,8 +11,8 @@ Content-Type: application/json
 {
     "id": "9",
     "nombre": "Antonio Ramón",
-    "nivel": "intermedio",
-    "activo": true
+    "level": "intermediate",
+    "active": true
 }
 
 ###
@@ -27,4 +27,8 @@ GET {{baseUrl}}/1
 ###
 # READ - Filtrar estudiantes activos
 GET {{baseUrl}}?active=true
+
+###
+# READ - Filtrar estudiantes ordenados por nivel
+GET {{baseUrl}}?sort=level
 
