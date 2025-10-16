@@ -42,3 +42,13 @@ Content-Type: application/json
     "level": "avanzado",
     "active": true
 }
+
+
+###
+#  PATCH - Actualizar solo un campo
+PATCH {{baseUrl}}/1
+Content-Type: application/json
+
+{
+    "active": false
+}
