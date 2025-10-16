@@ -44,12 +44,12 @@ Desarrollo del código JavaScript para generar los comandos cURL y el script de 
 - [X] Ejecutar todas las funciones al final del script, pasando los parámetros apropiados.
 
 ### 4. Script de Validación (`scripts/validate.sh`)
-- [ ] Crear el script `scripts/validate.sh`.
-- [ ] Implementar la validación de la existencia de al menos 10 archivos y carpetas clave (ej. `package.json`, `db.json`, `peticiones-crud.http`, `README.md`).
-- [ ] Verificar en `package.json`: `type: module`, y que `dotenv` y `json-server` estén instalados.
-- [ ] Verificar la existencia de al menos 6 capturas de Thunder Client en la carpeta `images/`.
-- [ ] Dar permisos de ejecución al script.
-- [ ] Verificar que el script funciona correctamente desde la terminal.
+- [X] Crear el script `scripts/validate.sh`.
+- [X] Implementar la validación de la existencia de al menos 10 archivos y carpetas clave (ej. `package.json`, `db.json`, `peticiones-crud.http`, `README.md`).
+- [X] Verificar en `package.json`: `type: module`, y que `dotenv` y `json-server` estén instalados.
+- [X] Verificar la existencia de al menos 6 capturas de Thunder Client en la carpeta `images/`.
+- [X] Dar permisos de ejecución al script.
+- [X] Verificar que el script funciona correctamente desde la terminal.
 
 ---
 
