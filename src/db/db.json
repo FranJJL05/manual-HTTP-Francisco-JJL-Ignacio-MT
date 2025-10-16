@@ -57,14 +57,6 @@
       "level": "intermediate"
     },
     {
-      "name": "Carlos Ruiz Gómez",
-      "email": "carlos.ruiz.nuevo@email.com",
-      "enrollmentDate": "2024-07-15",
-      "active": true,
-      "level": "beginner",
-      "id": "8"
-    },
-    {
       "id": "9",
       "nombre": "Antonio Ramón",
       "nivel": "intermedio",
