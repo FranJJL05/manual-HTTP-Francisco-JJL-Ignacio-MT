@@ -25,7 +25,7 @@ GET {{baseUrl}}
 GET {{baseUrl}}/1
 
 ###
-# READ - Filtrar estudiantes activos
+# READ - Filtrar estudiantes activos (Estudiantes cuyo campo active es true)
 GET {{baseUrl}}?active=true
 
 ###
@@ -33,7 +33,7 @@ GET {{baseUrl}}?active=true
 GET {{baseUrl}}?sort=level
 
 ###
-# UPDATE - Actualizar estudiante completo (PUT)
+# UPDATE - Actualizar estudiante completo (PUT) (EL estudiante cuyo id=1)
 PUT {{baseUrl}}/1
 Content-Type: application/json
 
@@ -45,7 +45,7 @@ Content-Type: application/json
 
 
 ###
-# PATCH - Actualizar solo un campo
+# PATCH - Actualizar solo un campo (Actualizar el campo active de true a false en el estudiante con id=1)
 PATCH {{baseUrl}}/1
 Content-Type: application/json
 
@@ -54,5 +54,5 @@ Content-Type: application/json
 }
 
 ###
-# DELETE - Eliminar un estudiante
+# DELETE - Eliminar un estudiante (El estudiante con id=9)
 DELETE {{baseUrl}}/9
