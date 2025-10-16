@@ -68,10 +68,10 @@ Ejecución manual de comandos, uso de herramientas visuales y documentación com
 - [X] Documentar el **DELETE** en `README.md`.
 
 ### 6. Thunder Client (Parte 4)
-- [ ] Crear las 6 peticiones CRUD en Thunder Client.
-- [ ] Realizar una captura de pantalla por cada petición (mostrando Request y Response completos).
-- [ ] Guardar las 6+ capturas en la carpeta `images/` con nombres descriptivos.
-- [ ] Incluir y documentar las capturas en `README.md`. Explicar, además, como usar la herramienta Thunder client.
+- [X] Crear las 6 peticiones CRUD en Thunder Client.
+- [X] Realizar una captura de pantalla por cada petición (mostrando Request y Response completos).
+- [X] Guardar las 6+ capturas en la carpeta `images/` con nombres descriptivos.
+- [X] Incluir y documentar las capturas en `README.md`. Explicar, además, como usar la herramienta Thunder client.
 
 ### 7. REST Client (Parte 5)
 - [ ] Crear el archivo `peticiones-crud.http` en la raíz.
