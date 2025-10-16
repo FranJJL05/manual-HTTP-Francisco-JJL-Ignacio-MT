@@ -58,20 +58,20 @@ Desarrollo del código JavaScript para generar los comandos cURL y el script de 
 Ejecución manual de comandos, uso de herramientas visuales y documentación completa en `README.md`.
 
 ### 5. Documentación cURL (Parte 3)
-- [X] Levantar el servidor `json-server`.
-- [X] Ejecutar los comandos cURL generados y capturar las respuestas reales.
-- [X] Documentar el **CREATE** en `README.md` (Comando, explicación de flags/headers, método, respuesta real y código de estado).
-- [X] Documentar el **READ ALL** en `README.md`.
-- [X] Documentar el **READ BY ID** en `README.md`.
-- [X] Documentar el **UPDATE (PUT)** en `README.md`.
-- [X] Documentar el **PATCH** en `README.md`.
-- [X] Documentar el **DELETE** en `README.md`.
+- [ ] Levantar el servidor `json-server`.
+- [ ] Ejecutar los comandos cURL generados y capturar las respuestas reales.
+- [ ] Documentar el **CREATE** en `README.md` (Comando, explicación de flags/headers, método, respuesta real y código de estado).
+- [ ] Documentar el **READ ALL** en `README.md`.
+- [ ] Documentar el **READ BY ID** en `README.md`.
+- [ ] Documentar el **UPDATE (PUT)** en `README.md`.
+- [ ] Documentar el **PATCH** en `README.md`.
+- [ ] Documentar el **DELETE** en `README.md`.
 
 ### 6. Thunder Client (Parte 4)
 - [ ] Crear las 6 peticiones CRUD en Thunder Client.
 - [ ] Realizar una captura de pantalla por cada petición (mostrando Request y Response completos).
 - [ ] Guardar las 6+ capturas en la carpeta `images/` con nombres descriptivos.
-- [ ] Incluir y documentar las capturas en `README.md`.
+- [ ] Incluir y documentar las capturas en `README.md`. Explicar, además, como usar la herramienta Thunder client.
 
 ### 7. REST Client (Parte 5)
 - [ ] Crear el archivo `peticiones-crud.http` en la raíz.
