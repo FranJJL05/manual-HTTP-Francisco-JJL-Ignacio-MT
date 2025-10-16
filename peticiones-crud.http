@@ -23,3 +23,8 @@ GET {{baseUrl}}
 ###
 # READ by ID - Obtener un estudiante por su ID (Id: 1)
 GET {{baseUrl}}/1
+
+###
+# READ - Filtrar estudiantes activos
+GET {{baseUrl}}?active=true
+
