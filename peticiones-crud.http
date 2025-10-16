@@ -16,5 +16,10 @@ Content-Type: application/json
 }
 
 ###
-# 🔵 READ ALL - Obtener todos los estudiantes
+# READ ALL - Obtener todos los estudiantes
 GET {{baseUrl}}
+
+
+###
+# READ by ID - Obtener un estudiante por su ID (Id: 1)
+GET {{baseUrl}}/1
