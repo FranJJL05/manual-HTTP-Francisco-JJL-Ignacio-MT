@@ -1,0 +1,14 @@
+@apiUrl = http://localhost
+@port = 4000
+@baseUrl = {{apiUrl}}:{{port}}/students
+
+###
+# CREATE - Agregar nuevo estudiante
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "nombre": "Juan Pérez",
+    "nivel": "intermedio",
+    "activo": true
+}
