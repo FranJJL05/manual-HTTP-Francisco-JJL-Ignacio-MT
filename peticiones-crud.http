@@ -32,3 +32,13 @@ GET {{baseUrl}}?active=true
 # READ - Filtrar estudiantes ordenados por nivel
 GET {{baseUrl}}?sort=level
 
+###
+# UPDATE - Actualizar estudiante completo (PUT)
+PUT {{baseUrl}}/1
+Content-Type: application/json
+
+{
+    "name": "Juan Pérez Actualizado",
+    "level": "avanzado",
+    "active": true
+}

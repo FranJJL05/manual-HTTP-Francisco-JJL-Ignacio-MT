@@ -1,12 +1,10 @@
 {
   "students": [
     {
-      "id": "1",
-      "name": "María García López",
-      "email": "maria.garcia@email.com",
-      "enrollmentDate": "2024-09-15",
+      "name": "Juan Pérez Actualizado",
+      "level": "avanzado",
       "active": true,
-      "level": "intermediate"
+      "id": "1"
     },
     {
       "id": "2",
