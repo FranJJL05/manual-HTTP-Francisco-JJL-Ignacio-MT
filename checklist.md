@@ -75,18 +75,18 @@ Ejecución manual de comandos, uso de herramientas visuales y documentación com
 - [X] Incluir y documentar las capturas en `README.md`. Explicar, además, como usar la herramienta Thunder client.
 
 ### 7. REST Client (Parte 5)
-- [ ] Crear el archivo `peticiones-crud.http` en la raíz.
-- [ ] Definir variables al inicio (`@baseUrl`, `@port`, `@apiUrl`).
-- [ ] Implementar la petición **CREATE** (POST).
-- [ ] Implementar la petición **READ All** (GET).
-- [ ] Implementar la petición **READ by ID** (GET).
-- [ ] Implementar petición **READ** para filtrar estudiantes activos (GET).
-- [ ] Implementar petición **READ** para filtrar estudiantes por nivel (GET).
-- [ ] Implementar la petición **UPDATE** completo (PUT).
-- [ ] Implementar la petición **PATCH** de campo específico.
-- [ ] Implementar la petición **DELETE**.
-- [ ] Separar cada petición con `###` y añadir comentarios descriptivos.
-- [ ] Probar todas las peticiones desde VS Code.
+- [X] Crear el archivo `peticiones-crud.http` en la raíz.
+- [X] Definir variables al inicio (`@baseUrl`, `@port`, `@apiUrl`).
+- [X] Implementar la petición **CREATE** (POST).
+- [X] Implementar la petición **READ All** (GET).
+- [X] Implementar la petición **READ by ID** (GET).
+- [X] Implementar petición **READ** para filtrar estudiantes activos (GET).
+- [X] Implementar petición **READ** para filtrar estudiantes por nivel (GET).
+- [X] Implementar la petición **UPDATE** completo (PUT).
+- [X] Implementar la petición **PATCH** de campo específico.
+- [X] Implementar la petición **DELETE**.
+- [X] Separar cada petición con `###` y añadir comentarios descriptivos.
+- [X] Probar todas las peticiones desde VS Code.
 
 ---
 
