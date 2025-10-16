@@ -57,18 +57,18 @@
       "level": "intermediate"
     },
     {
-      "id": "dde1",
-      "nombre": "Antonio Ramón",
-      "nivel": "intermedio",
-      "activo": true
-    },
-    {
       "id": "8",
       "name": "Sofía Martínez Ruiz",
       "email": "sofia.martinez@email.com",
       "enrollmentDate": "2025-01-20",
       "active": true,
       "level": "intermediate"
+    },
+    {
+      "id": "9",
+      "nombre": "Antonio Ramón",
+      "nivel": "intermedio",
+      "activo": true
     }
   ],
   "courses": [

@@ -9,6 +9,7 @@ POST {{baseUrl}}
 Content-Type: application/json
 
 {
+    "id": "9",
     "nombre": "Antonio Ramón",
     "nivel": "intermedio",
     "activo": true
