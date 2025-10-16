@@ -53,12 +53,6 @@
       "enrollmentDate": "2024-09-05",
       "active": false,
       "level": "intermediate"
-    },
-    {
-      "id": "9",
-      "nombre": "Antonio Ramón",
-      "level": "intermediate",
-      "active": true
     }
   ],
   "courses": [

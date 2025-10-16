@@ -45,10 +45,14 @@ Content-Type: application/json
 
 
 ###
-#  PATCH - Actualizar solo un campo
+# PATCH - Actualizar solo un campo
 PATCH {{baseUrl}}/1
 Content-Type: application/json
 
 {
     "active": false
 }
+
+###
+# DELETE - Eliminar un estudiante
+DELETE {{baseUrl}}/9
