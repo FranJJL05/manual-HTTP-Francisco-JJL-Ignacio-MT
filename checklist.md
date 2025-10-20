@@ -95,19 +95,19 @@ Ejecución manual de comandos, uso de herramientas visuales y documentación com
 Tareas finales de control de versiones y el proceso de entrega.
 
 ### 8. Git Workflow
-- [ ] Crear repositorio en GitHub y añadir al profesor como colaborador.
-- [ ] Inicializar Git local y conectar con el remoto.
-- [ ] Crear y subir la rama principal `main`.
-- [ ] Crear y cambiar a la rama de desarrollo `m1/http-request-response`.
-- [ ] Realizar *commits* incrementales y descriptivos (usando convenciones `feat:`, `docs:`, etc.).
-- [ ] **Asegurar que `.env` no haya sido versionado**.
-- [ ] Subir la rama al repositorio remoto.
+- [X] Crear repositorio en GitHub y añadir al profesor como colaborador.
+- [X] Inicializar Git local y conectar con el remoto.
+- [X] Crear y subir la rama principal `main`.
+- [X] Crear y cambiar a la rama de desarrollo `m1/http-request-response`.
+- [X] Realizar *commits* incrementales y descriptivos (usando convenciones `feat:`, `docs:`, etc.).
+- [X] **Asegurar que `.env` no haya sido versionado**.
+- [X] Subir la rama al repositorio remoto.
 
 ### 9. Entrega
-- [ ] Crear el *Pull Request* (PR) hacia `main`.
-- [ ] Asegurar que la descripción del PR sea detallada.
-- [ ] Si el trabajo es en pareja: La descripción del PR detalla la división del trabajo.
-- [ ] **Importante:** El script de validación debe pasar sin errores.
-- [ ] Tras la aprobación y *merge* del PR, actualizar la rama `main` local.
-- [ ] Crear el *tag* `M1/http-request-response`.
-- [ ] Subir el *tag* al repositorio remoto.
+- [X] Crear el *Pull Request* (PR) hacia `main`.
+- [X] Asegurar que la descripción del PR sea detallada.
+- [X] Si el trabajo es en pareja: La descripción del PR detalla la división del trabajo.
+- [X] **Importante:** El script de validación debe pasar sin errores.
+- [X] Tras la aprobación y *merge* del PR, actualizar la rama `main` local.
+- [X] Crear el *tag* `M1/http-request-response`.
+- [X] Subir el *tag* al repositorio remoto.
