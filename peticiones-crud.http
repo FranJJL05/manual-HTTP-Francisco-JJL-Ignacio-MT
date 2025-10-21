@@ -1,0 +1,58 @@
+### Variables
+@apiUrl = http://localhost
+@port = 4000
+@baseUrl = {{apiUrl}}:{{port}}/students
+
+###
+# CREATE - Agregar nuevo estudiante
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "id": "9",
+    "nombre": "Antonio Ramón",
+    "level": "intermediate",
+    "active": true
+}
+
+###
+# READ ALL - Obtener todos los estudiantes
+GET {{baseUrl}}
+
+
+###
+# READ by ID - Obtener un estudiante por su ID (Id: 1)
+GET {{baseUrl}}/1
+
+###
+# READ - Filtrar estudiantes activos (Estudiantes cuyo campo active es true)
+GET {{baseUrl}}?active=true
+
+###
+# READ - Filtrar estudiantes ordenados por nivel
+GET {{baseUrl}}?sort=level
+
+###
+# UPDATE - Actualizar estudiante completo (PUT) (EL estudiante cuyo id=1)
+PUT {{baseUrl}}/1
+Content-Type: application/json
+
+{
+    "name": "Juan Pérez Actualizado",
+    "level": "avanzado",
+    "active": true
+}
+
+
+###
+# PATCH - Actualizar solo un campo (Actualizar el campo active de true a false en el estudiante con id=1)
+PATCH {{baseUrl}}/1
+Content-Type: application/json
+
+{
+    "active": false
+}
+
+###
+# DELETE - Eliminar un estudiante (El estudiante con id=9)
+DELETE {{baseUrl}}/9
